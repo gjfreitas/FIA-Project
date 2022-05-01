@@ -1,0 +1,70 @@
+Confusion matrix - LogReg
+[[27  2]
+ [ 5 26]]
+
+Accuracy for test set for Logistic Regression =  0.8833333333333333
+Precision for test set for Logistic Regression =  0.84375
+True Positive Rate for test set for Logistic Regression =  0.9310344827586207
+True Negative Rate for test set for Logistic Regression =  0.8387096774193549
+False Positive Rate for test set for Logistic Regression =  0.16129032258064513
+Recall for test set for Logistic Regression =  0.9310344827586207
+F1 Score for test set for Logistic Regression =  0.8852459016393444
+Balanced Accuracy for test set for Logistic Regression =  0.8848720800889878
+AUC Score:  0.9299221357063403
+
+Confusion matrix - SVM
+[[24  5]
+ [ 7 24]]
+
+Accuracy for test set for SVM =  0.8
+Precision for test set for SVM =  0.7741935483870968
+True Positive Rate for test set for SVM =  0.8275862068965517
+True Negative Rate for test set for SVM =  0.7741935483870968
+False Positive Rate for test set for SVM =  0.22580645161290325
+Recall for test set for SVM =  0.8275862068965517
+F1 Score for test set for SVM =  0.7999999999999999
+Balanced Accuracy for test set for SVM =  0.8008898776418243
+AUC Score:  0.9299221357063403
+
+Confusion matrix - NB
+[[25  4]
+ [ 5 26]]
+
+Accuracy for test set for Naive Bayes =  0.85
+Precision for test set for Naive Bayes =  0.8333333333333334
+True Positive Rate for test set for Naive Bayes =  0.8620689655172413
+True Negative Rate for test set for Naive Bayes =  0.8387096774193549
+False Positive Rate for test set for Naive Bayes =  0.16129032258064513
+Recall for test set for Naive Bayes =  0.8620689655172413
+F1 Score for test set for Naive Bayes =  0.847457627118644
+Balanced Accuracy for test set for Naive Bayes =  0.850389321468298
+AUC Score:  0.9121245828698553
+
+Confusion matrix - DT
+[[23  6]
+ [ 6 25]]
+
+Accuracy for test set for Decision Tree =  0.8
+Precision for test set for Decision Tree =  0.7931034482758621
+True Positive Rate for test set for Decision Tree =  0.7931034482758621
+True Negative Rate for test set for Decision Tree =  0.8064516129032258
+False Positive Rate for test set for Decision Tree =  0.19354838709677424
+Recall for test set for Decision Tree =  0.7931034482758621
+F1 Score for test set for Decision Tree =  0.7931034482758621
+Balanced Accuracy for test set for Decision Tree =  0.7997775305895439
+AUC Score:  0.7997775305895439
+Confusion matrix - KNN
+[[22 11]
+ [ 8 19]]
+
+Accuracy for test set for KNN =  0.6833333333333333
+Precision for test set for KNN =  0.7333333333333333
+True Positive Rate for test set for KNN =  0.6666666666666666
+True Negative Rate for test set for KNN =  0.7037037037037037
+False Positive Rate for test set for KNN =  0.2962962962962963
+Recall for test set for KNN =  0.6666666666666666
+F1 Score for test set for KNN =  0.6984126984126984
+Balanced Accuracy for test set for KNN =  0.6851851851851851
+AUC Score:  0.7469135802469136
+
+Process finished with exit code 0

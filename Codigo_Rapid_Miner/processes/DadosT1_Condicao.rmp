@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?><process version="9.10.001">
+  <context>
+    <input/>
+    <output/>
+    <macros/>
+  </context>
+  <operator activated="true" class="process" compatibility="9.10.001" expanded="true" name="Process">
+    <parameter key="logverbosity" value="init"/>
+    <parameter key="random_seed" value="2001"/>
+    <parameter key="send_mail" value="never"/>
+    <parameter key="notification_email" value=""/>
+    <parameter key="process_duration_for_mail" value="30"/>
+    <parameter key="encoding" value="SYSTEM"/>
+    <process expanded="true">
+      <operator activated="true" class="retrieve" compatibility="9.10.001" expanded="true" height="68" name="Retrieve DadosT1" width="90" x="112" y="136">
+        <parameter key="repository_entry" value="//Trabalho 1 - FIA/data/DadosT1"/>
+      </operator>
+      <operator activated="true" class="numerical_to_polynominal" compatibility="9.10.001" expanded="true" height="82" name="Numerical to Polynominal" width="90" x="313" y="136">
+        <parameter key="attribute_filter_type" value="single"/>
+        <parameter key="attribute" value="condition"/>
+        <parameter key="attributes" value=""/>
+        <parameter key="use_except_expression" value="false"/>
+        <parameter key="value_type" value="numeric"/>
+        <parameter key="use_value_type_exception" value="false"/>
+        <parameter key="except_value_type" value="real"/>
+        <parameter key="block_type" value="value_series"/>
+        <parameter key="use_block_type_exception" value="false"/>
+        <parameter key="except_block_type" value="value_series_end"/>
+        <parameter key="invert_selection" value="false"/>
+        <parameter key="include_special_attributes" value="true"/>
+      </operator>
+      <operator activated="true" class="store" compatibility="9.10.001" expanded="true" height="68" name="Store" width="90" x="581" y="136">
+        <parameter key="repository_entry" value="../data/DadosT1_Condicao"/>
+      </operator>
+      <connect from_op="Retrieve DadosT1" from_port="output" to_op="Numerical to Polynominal" to_port="example set input"/>
+      <connect from_op="Numerical to Polynominal" from_port="example set output" to_op="Store" to_port="input"/>
+      <connect from_op="Store" from_port="through" to_port="result 1"/>
+      <portSpacing port="source_input 1" spacing="0"/>
+      <portSpacing port="sink_result 1" spacing="0"/>
+      <portSpacing port="sink_result 2" spacing="0"/>
+    </process>
+  </operator>
+</process>
